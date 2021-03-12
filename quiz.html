@@ -1,0 +1,119 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Acciojob entrance exam</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js">
+    </script>
+</head>
+
+<body>
+    <div id="Instruction">
+        <h1>Aptitude Quiz</h1>
+        <p style="text-align: end; font-size: 25px; margin-right: 10px;">Maximum marks : 10</p>
+        <ul class="instructions"><b>
+        <h2 style="font-size: 30px;">Instructions</h2>
+    </br>
+        <li>The Quiz Consists 5 MCQ of 2 Marks each.</li>
+        </br>
+        <li>Total Time Duration is 10 Minutes.</li>
+        </br>
+        <li>There will be only 1 correct answer for each question.</li>
+        </br>
+        <li>There is timer to check time. Hence, use of any type of watch is prohibited. </li>
+        </br>
+        <li>Students can visit previous question and can edit their answer.</li>
+        </br>
+        <li>After the allotted time, the quiz will be submitted automatically.</li>
+        </b>
+        </ul>
+        <p style="text-align: center; font-size: 25px;">You can start your Quiz by clicking the start button below.</p>
+    </div>
+
+    <div id="yes" style="text-align: center;"><button type="button" onClick="timer(); q1()" style="font-size: 20px;">Start</button></div>
+    <h4 id="dis"></h4>
+    <div id="qu1" style="display:none;">
+        <p id="ques1" class="ques"></p>
+        <div class="options">
+            <input type="radio" id="op11" name="ops1">
+            <label for="op11" id="op111"></label><br>
+            <input type="radio" id="op12" name="ops1">
+            <label for="op12" id="op112"></label><br>
+            <input type="radio" id="op13" name="ops1">
+            <label for="op13" id="op113"></label><br>
+            <input type="radio" id="op14" name="ops1">
+            <label for="op14" id="op114"></label><br>
+        </div>
+    </div>
+    <div id="qu2" style="display:none;">
+        <p id="ques2" class="ques"></p>
+        <div class="options">
+            <input type="radio" id="op21" name="ops2">
+            <label for="op21" id="op221"></label><br>
+            <input type="radio" id="op22" name="ops2">
+            <label for="op22" id="op222"></label><br>
+            <input type="radio" id="op23" name="ops2">
+            <label for="op23" id="op223"></label><br>
+            <input type="radio" id="op24" name="ops2">
+            <label for="op24" id="op224"></label><br>
+        </div>
+    </div>
+    <div id="qu3" style="display:none;">
+        <p id="ques3" class="ques"></p>
+        <div class="options">
+            <input type="radio" id="op31" name="ops3">
+            <label for="op31" id="op331"></label><br>
+            <input type="radio" id="op32" name="ops3">
+            <label for="op32" id="op332"></label><br>
+            <input type="radio" id="op33" name="ops3">
+            <label for="op33" id="op333"></label><br>
+            <input type="radio" id="op34" name="ops3">
+            <label for="op34" id="op334"></label><br>
+        </div>
+    </div>
+    <div id="qu4" style="display:none;">
+        <p id="ques4" class="ques"></p>
+        <div class="options">
+            <input type="radio" id="op41" name="ops4">
+            <label for="op41" id="op441"></label><br>
+            <input type="radio" id="op42" name="ops4">
+            <label for="op42" id="op442"></label><br>
+            <input type="radio" id="op43" name="ops4">
+            <label for="op43" id="op443"></label><br>
+            <input type="radio" id="op44" name="ops4">
+            <label for="op44" id="op444"></label><br>
+        </div>
+    </div>
+    <div id="qu5" style="display:none;">
+        <p id="ques5" class="ques"></p>
+        <div class="options">
+            <input type="radio" id="op51" name="ops5">
+            <label for="op51" id="op551"></label><br>
+            <input type="radio" id="op52" name="ops5">
+            <label for="op52" id="op552"></label><br>
+            <input type="radio" id="op53" name="ops5">
+            <label for="op53" id="op553"></label><br>
+            <input type="radio" id="op54" name="ops5">
+            <label for="op54" id="op554"></label><br>
+        </div>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div class="butt">
+        <div>
+            <Button style="display :none;" id="prev" class="previous w3-btn" type="button" value="previous">Previous</Button>
+            <Button style="display :none" id="next" class="next1 w3-btn" type="button" value="Next">Next</Button>
+        </div>
+    </div>
+    <div style="text-align: right;" class="grid1">
+        <button id="sub" style="display: none;" type="button" value="Submit" onClick="final()">Submit</button>
+    </div>
+
+    <h3 id="msg"></h3>
+
+
+</body>
+
+</html>
